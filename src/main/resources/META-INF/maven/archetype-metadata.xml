@@ -76,7 +76,6 @@
       <includes>
         <include>eurekaclinical-service-template.iml</include>
         <include>LICENSE</include>
-        <include>NOTICE</include>
         <include>vagrant@172.16.98.178</include>
       </includes>
     </fileSet>

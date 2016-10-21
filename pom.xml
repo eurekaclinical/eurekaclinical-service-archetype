@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.eurekaclinical</groupId>
-  <artifactId>eurekaclinical-service-archetype1</artifactId>
+  <artifactId>eurekaclinical-service-archetype</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>eurekaclinical-service-archetype1</name>
+  <name>eurekaclinical-service-template-archetype</name>
 
   <build>
     <extensions>
@@ -28,9 +28,9 @@
     </pluginManagement>
   </build>
 
-  <description>Parent pom.xml for all Eureka! Clinical projects with standard dependencies</description>
+  <description>Archetype for eurekaclinical service projects</description>
 
-  <url>https://github.com/eurekaclinical/eurekaclinical-parent-standard-deps.git/eurekaclinical-service-template</url>
+  <url>https://github.com/eurekaclinical/eurekaclinical-service-template.git</url>
 
   <developers>
     <developer>
@@ -80,10 +80,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-parent-standard-deps.git/eurekaclinical-service-template</connection>
-    <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-parent-standard-deps.git/eurekaclinical-service-template</developerConnection>
-    <tag>eurekaclinical-parent-standard-deps-1-Alpha-5</tag>
-    <url>https://github.com/eurekaclinical/eurekaclinical-parent-standard-deps.git/eurekaclinical-service-template</url>
+    <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-service-archetype.git</connection>
+    <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-service-archetype.git</developerConnection>
+    <url>https://github.com/eurekaclinical/eurekaclinical-service-archetype.git</url>
   </scm>
 
   <distributionManagement>
