@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.eurekaclinical</groupId>
         <artifactId>eurekaclinical-parent-standard-deps</artifactId>
-        <version>1-Alpha-6</version>
+        <version>1</version>
     </parent>
     <url>https://github.com/eurekaclinical/${artifactId}.git</url>
 
@@ -26,7 +26,7 @@
 
     <properties>
         <module-name>eurekaclinical-new-module</module-name>
-        <eurekaclinical-common-version>1.0-Alpha-16</eurekaclinical-common-version>
+        <eurekaclinical-common-version>1.0</eurekaclinical-common-version>
     </properties>
 <build>
     <plugins>
@@ -99,7 +99,7 @@
         <profile>
             <id>tomcat</id>
             <properties>
-                <cas-mock-version>1.0-Alpha-3</cas-mock-version>
+                <cas-mock-version>1.0</cas-mock-version>
                 <tomcat.httpsPort>8443</tomcat.httpsPort>
                 <tomcat.port>8080</tomcat.port>
             </properties>
