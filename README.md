@@ -21,4 +21,4 @@ mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=org.eurekacli
 5) To generate an initial NOTICE file, type `mvn notice:generate`. You will need to rerun this command whenever the project's dependencies change.
 6) Change the module-name property in the pom.xml to the name of the module you are trying to implement. Keep this consistent with the corresponding webapp project if you want them both to use the same application.properties. Also the service URL's and webapp URL's for the module are looked up based on this property in WebappProperties class.
 
-The resulting service project will be buildable using `mvn clean install` and runnable using `mvn tomcat7:run -Ptomcat`. After running, go to your web browser and navigate to `https://localhost:8443/api/protected/test`. You should see `Hello World`.
+The resulting service project will be buildable using `mvn clean install` and runnable using `mvn tomcat7:run -Ptomcat`. After running, go to your web browser and navigate to `https://localhost:8443/project-name/api/protected/test`. You should see `Hello World`.
