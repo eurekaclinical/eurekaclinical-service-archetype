@@ -25,8 +25,8 @@
     </issueManagement>
 
     <properties>
-        <module-name>eurekaclinical-new-module</module-name>
-        <eurekaclinical-common-version>1.0</eurekaclinical-common-version>
+        <module-name>${artifactId}</module-name>
+        <eurekaclinical-common-version>2.0-Alpha-9</eurekaclinical-common-version>
     </properties>
 <build>
     <plugins>
