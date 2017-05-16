@@ -9,6 +9,11 @@ No final releases yet
 ## What does it do?
 This project is an maven archetype that helps you create a base eurekaclinical service project that you can build on. A working service project created based on this archetype implements required User and Roles resources and entity objects as well as a liquibase changelog file that creates the corresponding tables. A test resource is included for testing purposes. 
 
+## Requirements
+* [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
+* [Maven 3.2.5 or greater](https://maven.apache.org)
+
+## How to use it
 The project can be created as follows:
 
 1) Run the following command, after changing the -DartifactId name to the name of your new project and the -DarchetypeVersion to the version of the archetype that you want to use.
