@@ -1,4 +1,5 @@
 # Eureka! Clinical Service Archetype
+Atlanta Clinical and Translational Science Institute (ACTSI), Emory University, Atlanta GA
 
 ## Version 1.0 development series
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-service-archetype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-service-archetype)
