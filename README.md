@@ -1,14 +1,14 @@
 # Eureka! Clinical Service Archetype
 Atlanta Clinical and Translational Science Institute (ACTSI), Emory University, Atlanta GA
 
+## What does it do?
+This project is an maven archetype that helps you create a base eurekaclinical service project that you can build on. A working service project created based on this archetype implements required User and Roles resources and entity objects as well as a liquibase changelog file that creates the corresponding tables. A test resource is included for testing purposes. 
+
 ## Version 1.0 development series
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-service-archetype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-service-archetype)
 
 ## Version history
 No final releases yet
-
-## What does it do?
-This project is an maven archetype that helps you create a base eurekaclinical service project that you can build on. A working service project created based on this archetype implements required User and Roles resources and entity objects as well as a liquibase changelog file that creates the corresponding tables. A test resource is included for testing purposes. 
 
 ## Requirements
 * [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
