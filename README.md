@@ -25,10 +25,9 @@ Alternatively, run the following and answer the prompts:
 ```
 mvn archetype:generate -DarchetypeGroupId=org.eurekaclinical -DarchetypeArtifactId=eurekaclinical-service-archetype -DarchetypeVersion=1.0-Alpha-3-SNAPSHOT
 ```
-2) When prompted, specify an initial version of your new project, such as 1.0-SNAPSHOT.
-3) Confirm the package name when prompted.
-4) A folder with the new project should be created in the current directory, which in this example would be eurekaclinical-microservicename-service. Type `cd eurekaclinical-projectname-service`.
-5) To generate an initial NOTICE file, type `mvn notice:generate`. You will need to rerun this command whenever the project's dependencies change.
-6) Change the module-name property in the pom.xml to the name of the module you are trying to implement. Keep this consistent with the corresponding webapp project if you want them both to use the same application.properties. Also the service URL's and webapp URL's for the module are looked up based on this property in WebappProperties class.
+Follow the conventions in the first example above, replacing `microservicename` or `MicroserviceName` with a name for your new service with corresponding capitalization.
+
+2) A folder with the new project should be created in the current directory, which in this example would be eurekaclinical-microservicename-service. Type `cd eurekaclinical-projectname-service`.
+3) To generate an initial NOTICE file, type `mvn notice:generate`. You will need to rerun this command whenever the project's dependencies change.
 
 The resulting service project will be buildable using `mvn clean install` and runnable using `mvn tomcat7:run -Ptomcat`. After running, go to your web browser and navigate to `https://localhost:8443/project-name/api/protected/test`. You should see `Hello World`.
