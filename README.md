@@ -13,7 +13,11 @@ The project can be created as follows:
 
 1) Run the following command, after changing the -DartifactId name to the name of your new project and the -DarchetypeVersion to the version of the archetype that you want to use.
 ```
-mvn archetype:generate -DarchetypeGroupId=org.eurekaclinical -DarchetypeArtifactId=eurekaclinical-service-archetype -DarchetypeVersion=version -DgroupId=org.eurekaclinical -DartifactId=eurekaclinical-microservicename-service
+mvn archetype:generate -DarchetypeGroupId=org.eurekaclinical -DarchetypeArtifactId=eurekaclinical-service-archetype -DarchetypeVersion=version -DgroupId=org.eurekaclinical -DartifactId=eurekaclinical-microservicename-service -Dpackage=org.eurekaclinical.package -DdataSource=EurekaClinicalMicroserviceNameService -DpropertyNamespace=eurekaclinical.microservicename -DshortNamespace=ec-microservicename
+```
+Alternatively, run the following and answer the prompts:
+```
+mvn archetype:generate -DarchetypeGroupId=org.eurekaclinical -DarchetypeArtifactId=eurekaclinical-service-archetype -DarchetypeVersion=1.0-Alpha-3-SNAPSHOT
 ```
 2) When prompted, specify an initial version of your new project, such as 1.0-SNAPSHOT.
 3) Confirm the package name when prompted.

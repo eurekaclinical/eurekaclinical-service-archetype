@@ -1,6 +1,3 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
 package ${package}.dao;
 
 /*-
@@ -24,7 +21,7 @@ package ${package}.dao;
  */
 
 import ${package}.entity.UserEntity;
-import ${groupId}.standardapis.dao.AbstractJpaRoleDao;
+import org.eurekaclinical.standardapis.dao.AbstractJpaRoleDao;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
@@ -33,16 +30,17 @@ import javax.persistence.EntityManager;
 /**
  * Created by akalsan on 10/4/16.
  */
-public class JpaUserDao extends ${groupId}.standardapis.dao.AbstractJpaUserDao<UserEntity> {
-	/**
-	 * Create an object with the give entity manager.
-	 *
-	 * @param inEMProvider The entity manager to be used for communication with
-	 * the data store.
-	 */
-	@Inject
-	public JpaUserDao(final Provider<EntityManager> inEMProvider) {
-		super(UserEntity.class, inEMProvider);
-	}
+public class JpaUserDao extends org.eurekaclinical.standardapis.dao.AbstractJpaUserDao<UserEntity> {
+
+    /**
+     * Create an object with the give entity manager.
+     *
+     * @param inEMProvider The entity manager to be used for communication with
+     * the data store.
+     */
+    @Inject
+    public JpaUserDao(final Provider<EntityManager> inEMProvider) {
+        super(UserEntity.class, inEMProvider);
+    }
 
 }
