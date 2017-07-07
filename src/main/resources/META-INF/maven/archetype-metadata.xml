@@ -51,7 +51,7 @@
         <fileSet encoding="UTF-8">
             <directory></directory>
             <includes>
-                <include>eurekaclinical-service-template.iml</include>
+                <include>.gitignore</include>
                 <include>LICENSE</include>
             </includes>
         </fileSet>
