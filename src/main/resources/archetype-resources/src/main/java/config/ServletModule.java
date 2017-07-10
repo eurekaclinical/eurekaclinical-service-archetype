@@ -9,10 +9,8 @@ import ${package}.props.ServiceProperties;
 public class ServletModule extends AbstractAuthorizingJerseyServletModuleWithPersist {
 
     private static final String PACKAGE_NAMES = "${package}.resource";
-    private final ServiceProperties properties;
 
     public ServletModule(ServiceProperties inProperties) {
         super(inProperties, PACKAGE_NAMES);
-        this.properties = inProperties;
     }
 }
