@@ -25,6 +25,8 @@ public class RoleResource extends AbstractRoleResource<RoleEntity, Role> {
     @Override
     protected Role toComm(RoleEntity roleEntity, HttpServletRequest req) {
         Role role = new Role();
+        role.setId(roleEntity.getId());
+        role.setName(roleEntity.getName());
         return role;
     }
 

@@ -1,11 +1,11 @@
 package ${package}.props;
 
-import org.eurekaclinical.standardapis.props.CasEurekaClinicalProperties;
+import org.eurekaclinical.standardapis.props.CasJerseyEurekaClinicalProperties;
 
 /**
  * Created by akalsan on 10/4/16.
  */
-public class ServiceProperties extends CasEurekaClinicalProperties {
+public class ServiceProperties extends CasJerseyEurekaClinicalProperties {
 
     public ServiceProperties() {
         super("/etc/${shortNamespace}");
