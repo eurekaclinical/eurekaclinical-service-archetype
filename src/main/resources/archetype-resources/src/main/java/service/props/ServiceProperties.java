@@ -1,4 +1,4 @@
-package ${package}.props;
+package ${package}.service.props;
 
 import org.eurekaclinical.standardapis.props.CasJerseyEurekaClinicalProperties;
 

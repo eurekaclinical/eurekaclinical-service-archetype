@@ -1,4 +1,4 @@
-package ${package}.dao;
+package ${package}.service.dao;
 
 /*-
  * ${symbol_pound}%L
@@ -20,7 +20,7 @@ package ${package}.dao;
  * ${symbol_pound}L%
  */
 
-import ${package}.entity.UserEntity;
+import ${package}.service.entity.UserEntity;
 import org.eurekaclinical.standardapis.dao.AbstractJpaRoleDao;
 
 import javax.inject.Inject;

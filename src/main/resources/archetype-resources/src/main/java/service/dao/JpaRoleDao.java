@@ -1,6 +1,6 @@
-package ${package}.dao;
+package ${package}.service.dao;
 
-import ${package}.entity.RoleEntity;
+import ${package}.service.entity.RoleEntity;
 import org.eurekaclinical.standardapis.dao.AbstractJpaRoleDao;
 
 import javax.inject.Inject;

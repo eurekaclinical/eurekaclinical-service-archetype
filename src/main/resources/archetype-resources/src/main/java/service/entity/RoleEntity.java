@@ -1,4 +1,4 @@
-package ${package}.entity;
+package ${package}.service.entity;
 
 import java.util.Objects;
 import javax.persistence.Column;

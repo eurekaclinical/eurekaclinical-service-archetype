@@ -1,11 +1,11 @@
-package ${package}.config;
+package ${package}.service.config;
 
 import com.google.inject.Injector;
 import com.google.inject.Module;
 import com.google.inject.persist.jpa.JpaPersistModule;
 import com.google.inject.servlet.GuiceServletContextListener;
 import org.eurekaclinical.common.config.InjectorSupport;
-import ${package}.props.ServiceProperties;
+import ${package}.service.props.ServiceProperties;
 
 /**
  * Loaded on application startup, this class creates the Guice injector. If

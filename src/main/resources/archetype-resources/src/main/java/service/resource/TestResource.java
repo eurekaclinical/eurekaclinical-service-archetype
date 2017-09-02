@@ -1,4 +1,4 @@
-package ${package}.resource;
+package ${package}.service.resource;
 
 import com.google.inject.persist.Transactional;
 import org.eurekaclinical.standardapis.dao.RoleDao;

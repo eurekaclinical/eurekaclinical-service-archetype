@@ -1,10 +1,10 @@
-package ${package}.resource;
+package ${package}.service.resource;
 
 import com.google.inject.persist.Transactional;
 import org.eurekaclinical.common.comm.User;
 import org.eurekaclinical.common.resource.AbstractUserResource;
-import ${package}.entity.RoleEntity;
-import ${package}.entity.UserEntity;
+import ${package}.service.entity.RoleEntity;
+import ${package}.service.entity.UserEntity;
 import org.eurekaclinical.standardapis.dao.RoleDao;
 import org.eurekaclinical.standardapis.dao.UserDao;
 

@@ -1,12 +1,12 @@
-package ${package}.resource;
+package ${package}.service.resource;
 
-import com.google.inject.Inject;
 import com.google.inject.persist.Transactional;
 import org.eurekaclinical.common.resource.AbstractRoleResource;
-import ${package}.entity.RoleEntity;
+import ${package}.service.entity.RoleEntity;
 import org.eurekaclinical.standardapis.dao.RoleDao;
 import org.eurekaclinical.common.comm.Role;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Path;
 

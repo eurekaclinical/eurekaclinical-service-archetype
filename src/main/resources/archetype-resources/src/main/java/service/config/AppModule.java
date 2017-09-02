@@ -1,11 +1,11 @@
-package ${package}.config;
+package ${package}.service.config;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
-import ${package}.dao.JpaRoleDao;
-import ${package}.dao.JpaUserDao;
-import ${package}.entity.RoleEntity;
-import ${package}.entity.UserEntity;
+import ${package}.service.dao.JpaRoleDao;
+import ${package}.service.dao.JpaUserDao;
+import ${package}.service.entity.RoleEntity;
+import ${package}.service.entity.UserEntity;
 import org.eurekaclinical.standardapis.dao.RoleDao;
 import org.eurekaclinical.standardapis.dao.UserDao;
 

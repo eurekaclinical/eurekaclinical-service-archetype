@@ -1,4 +1,4 @@
-package ${package}.entity;
+package ${package}.service.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
