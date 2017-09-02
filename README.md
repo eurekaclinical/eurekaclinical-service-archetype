@@ -73,7 +73,7 @@ University.
 2) After confirming that you want to go ahead and create the new service 
 project, maven will create a folder with the new project in the current 
 directory, which in this example would be 
-`eurekaclinical-microservicename-service`, and it will create a starter set of
+`eurekaclinical-microservicename-service`. It also will create a starter set of
 class files and resources. Type `cd eurekaclinical-microservicename-service`.
 3) To generate an initial NOTICE file, type `mvn notice:generate`. You will 
 need to rerun this command whenever the project's dependencies change.
