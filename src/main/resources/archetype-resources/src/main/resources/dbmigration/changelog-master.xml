@@ -15,7 +15,7 @@
                 <constraints nullable="false" primaryKey="true" primaryKeyName="USERS_PK"/>
             </column>
             <column name="USERNAME" type="VARCHAR(255)">
-                <constraints unique="true" uniqueConstraintName="USERS_USERNAME_UNIQ"/>
+                <constraints nullable="false" unique="true" uniqueConstraintName="USERS_USERNAME_UNIQ"/>
             </column>
         </createTable>
         <createSequence sequenceName="USER_SEQ"/>
