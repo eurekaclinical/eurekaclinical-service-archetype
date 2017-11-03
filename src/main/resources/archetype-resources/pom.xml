@@ -226,7 +226,7 @@
                                 </webapp>
                             </webapps>
                             <addContextWarDependencies>true</addContextWarDependencies>
-                            <addWarDependenciesInClassloader>true</addWarDependenciesInClassloader>
+                            <addWarDependenciesInClassloader>false</addWarDependenciesInClassloader>
                         </configuration>
                     </plugin>
                 </plugins>
