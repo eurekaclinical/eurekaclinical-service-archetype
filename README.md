@@ -30,7 +30,9 @@ mvn archetype:generate -DarchetypeGroupId=org.eurekaclinical \
     -DpropertyNamespace=eurekaclinical.microservicename \
     -DshortNamespace=ec-microservicename \
     -DinceptionYear=four-digit-year \
-    -Dversion=1.0-SNAPSHOT
+    -Dversion=1.0-SNAPSHOT \
+    -DclientArtifactId=eurekaclinical-microservicename-client \
+    -DclientVersion=clientversion
 ```
 Alternatively, run the following and answer the prompts:
 ```
@@ -61,6 +63,10 @@ logfile. For Eureka! Clinical core projects, we use the `ec` prefix instead of
 is anticipated. The value that you specify here goes into the `inceptionYear` 
 tag in the resulting maven project's pom.xml, and it also goes into the
 `etc/NOTICE.template` file.
+* `clientArtifactId`: the artifactId of the corresponding client project. 
+Assumes that the client project and this project have the same groupId.
+* `clientVersion`: the version of the corresponding client project. Assumes 
+that the client project and this project have the same groupId.
  
 All Eureka! Clinical core projects should follow the naming convention in the 
 first example above, replacing `microservicename` or `MicroserviceName` with a 
