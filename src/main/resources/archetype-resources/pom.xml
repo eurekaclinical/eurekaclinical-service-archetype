@@ -26,8 +26,8 @@
     </issueManagement>
 
     <properties>
-        <eurekaclinical-common-version>2.0-Alpha-38</eurekaclinical-common-version>
-	<eurekaclinical-standard-apis-version>2.0-Alpha-18</eurekaclinical-standard-apis-version>
+        <eurekaclinical-common-version>2.0-Alpha-40</eurekaclinical-common-version>
+	<eurekaclinical-standard-apis-version>2.0-Alpha-19</eurekaclinical-standard-apis-version>
         <eurekaclinical-client-version>${clientVersion}</eurekaclinical-client-version>
     </properties>
     <build>

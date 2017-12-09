@@ -5,6 +5,7 @@ import com.google.inject.Module;
 import com.google.inject.persist.jpa.JpaPersistModule;
 import com.google.inject.servlet.GuiceServletContextListener;
 import org.eurekaclinical.common.config.InjectorSupport;
+import org.eurekaclinical.common.config.ServiceServletModule;
 import ${package}.service.props.ServiceProperties;
 
 /**
@@ -17,6 +18,7 @@ import ${package}.service.props.ServiceProperties;
  * client and add it to the servlet context.
  */
 public class ContextListener extends GuiceServletContextListener {
+    private static final String PACKAGE_NAMES = "${package}.service.resource";
     private static final String JPA_UNIT = "service-jpa-unit";
     
     private final ServiceProperties properties;
@@ -39,7 +41,7 @@ public class ContextListener extends GuiceServletContextListener {
         return new InjectorSupport(
             new Module[]{
                 new AppModule(),
-                new ServletModule(this.properties),
+                new ServiceServletModule(this.properties, PACKAGE_NAMES),
                 new JpaPersistModule(JPA_UNIT)
             },
             this.properties).getInjector();
