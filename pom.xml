@@ -4,7 +4,7 @@
 
     <groupId>org.eurekaclinical</groupId>
     <artifactId>eurekaclinical-service-archetype</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>Eureka! Clinical Service Archetype</name>
@@ -62,6 +62,6 @@
         <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-service-archetype.git</connection>
         <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-service-archetype.git</developerConnection>
         <url>https://github.com/eurekaclinical/eurekaclinical-service-archetype.git</url>
-        <tag>eurekaclinical-service-archetype-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 </project>
