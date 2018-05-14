@@ -1,20 +1,21 @@
-# ${artifactId}
+#set($hash = '#')
+${hash} ${artifactId}
 [Georgia Clinical and Translational Science Alliance (Georgia CTSA)](http://www.georgiactsa.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
-## What does it do?
+${hash}${hash} What does it do?
 Write a description here
 
-## Version 1.0 development series
+${hash}${hash} Version 1.0 development series
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/${groupId}/${artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${groupId}/${artifactId})
 
 ## Version history
 No final releases yet
 
-## Build requirements
+${hash}${hash} Build requirements
 * [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 * [Maven 3.2.5 or greater](https://maven.apache.org)
 
-## Runtime requirements
+${hash}${hash} Runtime requirements
 * [Oracle Java JRE 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 * [Tomcat 7](https://tomcat.apache.org)
 * One of the following relational databases:
@@ -22,78 +23,78 @@ No final releases yet
   * [PostgreSQL](https://www.postgresql.org) 9.1 or greater
   * [H2](http://h2database.com) 1.4.193 or greater (for testing)
 
-## REST endpoints
+${hash}${hash} REST endpoints
 
-### `/api/protected/users`
+${hash}${hash}${hash} `/api/protected/users`
 Manages registering a user with this service for authorization purposes.
 
-#### Role-based authorization
+${hash}${hash}${hash}${hash} Role-based authorization
 Call-dependent
 
-#### Requires successful authentication
+${hash}${hash}${hash}${hash} Requires successful authentication
 Yes
 
-#### User object
+${hash}${hash}${hash}${hash} User object
 Properties:
 * `id`: unique number identifying the user (set by the server on object creation, and required thereafter).
 * `username`: required username string.
 * `roles`: array of numerical ids of roles.
 
-#### Calls
+${hash}${hash}${hash}${hash} Calls
 All calls use standard names, return values and status codes as specified in the [Eureka! Clinical microservice specification](https://github.com/eurekaclinical/dev-wiki/wiki/Eureka%21-Clinical-microservice-specification)
 
-##### GET `/api/protected/users`
+${hash}${hash}${hash}${hash}${hash} GET `/api/protected/users`
 Returns an array of all User objects. Requires the `admin` role.
 
-##### GET `/api/protected/users/{id}`
+${hash}${hash}${hash}${hash}${hash} GET `/api/protected/users/{id}`
 Returns a specified User object by the value of its id property, which is unique. Requires the `admin` role to return any user record. Otherwise, it will only return the user's own record.
 
-##### GET `/api/protected/users/byname/{username}`
+${hash}${hash}${hash}${hash}${hash} GET `/api/protected/users/byname/{username}`
 Returns a specified User object by its username, which is unique. Requires the `admin` role to return any user record. Otherwise, it will only return the user's own record.
 
-##### GET `/api/protected/users/me`
+${hash}${hash}${hash}${hash}${hash} GET `/api/protected/users/me`
 Returns the User object for the currently authenticated user.
 
-##### POST `/api/protected/users/`
+${hash}${hash}${hash}${hash}${hash} POST `/api/protected/users/`
 Creates a new user. The User object is passed in as the body of the request. Returns the URI of the created User object. Requires the `admin` role.
 
-##### PUT `/api/protected/users/{id}`
+${hash}${hash}${hash}${hash}${hash} PUT `/api/protected/users/{id}`
 Updates the user object with the specified id. The User object is passed in as the body of the request. Requires the `admin` role.
 
-### `/api/protected/roles`
+${hash}${hash}${hash} `/api/protected/roles`
 Manages roles for this service. It is read-only.
 
-#### Role-based authorization
+${hash}${hash}${hash}${hash} Role-based authorization
 No.
 
-#### Requires successful authentication
+${hash}${hash}${hash}${hash} Requires successful authentication
 Yes
 
-#### Role object
+${hash}${hash}${hash}${hash} Role object
 Properties:
 * `id`: unique number identifying the role.
 * `name`: the role's name string.
 
-#### Calls
+${hash}${hash}${hash}${hash} Calls
 All calls use standard names, return values and status codes as specified in the [Eureka! Clinical microservice specification](https://github.com/eurekaclinical/dev-wiki/wiki/Eureka%21-Clinical-microservice-specification)
 
-##### GET `/api/protected/roles`
+${hash}${hash}${hash}${hash}${hash} GET `/api/protected/roles`
 Returns an array of all User objects.
 
-##### GET `/api/protected/roles/{id}`
+${hash}${hash}${hash}${hash}${hash} GET `/api/protected/roles/{id}`
 Returns a specified Role object by the value of its id property, which is unique.
 
-##### GET `/api/protected/roles/byname/{name}`
+${hash}${hash}${hash}${hash}${hash} GET `/api/protected/roles/byname/{name}`
 Returns a specified Role object by its name, which is unique.
 
-## Building it
+${hash}${hash} Building it
 The project uses the maven build tool. Building for the first time is typically done by invoking `mvn clean notice:generate install`. For subsequent builds, `mvn clean install` can be invoked on the command line. For simple file changes, not additions or deletions, you can usually use `mvn install`. See https://github.com/eurekaclinical/dev-wiki/wiki/Building-Eureka!-Clinical-projects for more details.
 
-## Performing system tests
+${hash}${hash} Performing system tests
 You can run this project in an embedded tomcat by executing `mvn process-resources cargo:run -Ptomcat` after you have built it. It will be accessible in your web browser at https://localhost:8443/${artifactId}/. Your username will be `superuser`.
 
-## Installation
-### Database schema creation
+${hash}${hash} Installation
+${hash}${hash}${hash} Database schema creation
 A [Liquibase](http://www.liquibase.org) changelog is provided in `src/main/resources/dbmigration/` for creating the schema and objects. [Liquibase 3.3 or greater](http://www.liquibase.org/download/index.html) is required.
 
 Perform the following steps:
@@ -129,7 +130,7 @@ Perform the following steps:
 The validation query above is suitable for PostgreSQL. For Oracle and H2, use
 `SELECT 1 FROM DUAL`.
 
-### Configuration
+${hash}${hash}${hash} Configuration
 This service is configured using a properties file located at `/etc/${shortNamespace}/application.properties`. It supports the following properties:
 * `${propertyNamespace}.callbackserver`: https://hostname:port
 * `${propertyNamespace}.url`: https://hostname:port/${artifactId}
@@ -137,13 +138,13 @@ This service is configured using a properties file located at `/etc/${shortNames
 
 A Tomcat restart is required to detect any changes to the configuration file.
 
-### WAR installation
+${hash}${hash}${hash} WAR installation
 1) Stop Tomcat.
 2) Remove any old copies of the unpacked war from Tomcat's webapps directory.
 3) Copy the warfile into the tomcat webapps directory, renaming it to remove the version. For example, rename `${artifactId}-${version}.war` to `${artifactId}.war`.
 4) Start Tomcat.
 
-## Maven dependency
+${hash}${hash} Maven dependency
 ```
 <dependency>
     <groupId>${groupId}</groupId>
@@ -152,9 +153,9 @@ A Tomcat restart is required to detect any changes to the configuration file.
 </dependency>
 ```
 
-## Developer documentation
+${hash}${hash} Developer documentation
 * [Javadoc for latest development release](http://javadoc.io/doc/${groupId}/${artifactId}) [![Javadocs](http://javadoc.io/badge/${groupId}/${artifactId}.svg)](http://javadoc.io/doc/${groupId}/${artifactId})
 
-## Getting help
+${hash}${hash} Getting help
 Feel free to contact us at help@eurekaclinical.org.
 
