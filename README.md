@@ -1,5 +1,5 @@
 # Eureka! Clinical Service Archetype
-[Atlanta Clinical and Translational Science Institute (ACTSI)](http://www.actsi.org), [Emory University](http://www.emory.edu), Atlanta, GA
+[Georgia Clinical and Translational Science Alliance (Georgia CTSA)](http://www.georgiactsa.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
 ## What does it do?
 This project is a maven archetype that creates a base Eureka! Clinical service with User and Role resources, entity objects, 
