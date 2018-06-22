@@ -90,7 +90,7 @@ Returns a specified Role object by its name, which is unique.
 The project uses the maven build tool. Building for the first time is typically done by invoking `mvn clean notice:generate install`. For subsequent builds, `mvn clean install` can be invoked on the command line. For simple file changes, not additions or deletions, you can usually use `mvn install`. See https://github.com/eurekaclinical/dev-wiki/wiki/Building-Eureka!-Clinical-projects for more details.
 
 ## Performing system tests
-You can run this project in an embedded tomcat by executing `mvn cargo:run -Ptomcat` after you have built it. It will be accessible in your web browser at https://localhost:8443/${artifactId}/. Your username will be `superuser`.
+You can run this project in an embedded tomcat by executing `mvn process-resources cargo:run -Ptomcat` after you have built it. It will be accessible in your web browser at https://localhost:8443/${artifactId}/. Your username will be `superuser`.
 
 ## Installation
 ### Database schema creation
