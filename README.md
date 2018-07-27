@@ -5,8 +5,13 @@
 This project is a maven archetype that creates a base Eureka! Clinical service with User and Role resources, entity objects, 
 and a liquibase changelog file that creates the corresponding tables. An additional `test` resource is included.
 
-## Version history
+## Version 2.0
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-service-archetype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-service-archetype)
+
+This version will support creating Eureka! Clinical services using the next major version release of the Eureka! Clinical service framework.
+
+### Version 1.0
+Initial release.
 
 ## Version 1.0
 Initial release.
